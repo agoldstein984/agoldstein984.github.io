@@ -1,19 +1,19 @@
+## About
+
+The landing page of Etacar dev team
+
 ## Preview
 
 **[View Live Preview](https://gldstn.github.io)**
 
 ## Usage
 
-### Basic Usage
+```
+npm install
+gulp dev
+```
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-### Advanced Usage
-
-`npm install`
-`gulp dev`
-
-#### Gulp Tasks
+## Gulp Tasks
 
 - `gulp` the default task that builds everything
 - `gulp dev` browserSync opens the project in your default browser and live reloads when changes are made
@@ -21,7 +21,3 @@ After downloading, simply edit the HTML and CSS files included with the template
 - `gulp minify-css` minifies the compiled CSS file
 - `gulp minify-js` minifies the themes JS file
 - `gulp copy` copies dependencies from node_modules to the vendor directory
-
-## About
-
-A landing page of a famous Minsk Ruby dev team
