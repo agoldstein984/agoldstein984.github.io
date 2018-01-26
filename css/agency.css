@@ -180,6 +180,9 @@ header.masthead {
 .service-heading {
   margin: 15px 0;
   text-transform: none; }
+  .service-heading--wide {
+    margin-left: -7px;
+    margin-right: -7px; }
 
 #portfolio .portfolio-item {
   right: 0;

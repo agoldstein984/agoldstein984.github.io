@@ -55,9 +55,6 @@
               <a class="nav-link js-scroll-trigger" href="#products">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
           </ul>
@@ -78,12 +75,15 @@
     </header>
 
     <!-- Services -->
-    <section id="services">
+    <section class="bg-light" id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Services</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted">
+              <a href="https://en.wikipedia.org/wiki/Eta_Carinae" target="_blank">Star bright</a>
+              business solutions
+            </h3>
           </div>
         </div>
         <div class="row text-center">
@@ -93,34 +93,44 @@
               <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Ruby on Rails Development</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <ul class="text-muted text-left">
+              <li>Application Development</li>
+              <li>CMS</li>
+              <li>Migration</li>
+              <li>Testing and Maintenance</li>
+            </ul>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Python Machine Learning</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="service-heading">Python Data Analysis</h4>
+            <ul class="text-muted text-left"> 
+              <li>Statistical NLP models, POS Tagging, Parsing, Sequence Tagging, Word Sense Disambiguation, Language Models, Topic Modelling</li>
+              <li>Market Intelligence, Reputation Monitoring</li>
+              <li>NLTK, Mahout, GATE, Stanford NLP Suite, Weka, Scikit</li>
+            </ul>
           </div>
           <div class="col-md-4">
-              <span class="fa-stack fa-4x">
-                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                <i class="fa fa-code fa-stack-1x fa-inverse"></i>
-              </span>
-              <h4 class="service-heading">Frontend Development</h4>
-              <ul class="text-muted text-left">
-                <li>React, Redux, AngularJS, ES6, ES7</li>
-                <li>Styled Components, PostCSS, Less, Sass</li>
-                <li>webpack, Docker, AWS</li>
-              </ul>
-            </div>
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Frontend Development</h4>
+            <ul class="text-muted text-left">
+              <li>React+Redux, AngularJS, Backbone+Marionette, ES6, ES7</li>
+              <li>Styled Components, PostCSS, Less, Sass</li>
+              <li>Bootstrap, Foundation</li>
+              <li>webpack, Docker, AWS</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <section id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -218,11 +228,11 @@
     </section>
 
     <!-- Products -->
-    <section id="products">
+    <section class="bg-light" id="products">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Products</h2>
+            <h2 class="section-heading text-uppercase">Products and Future visions</h2>
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
           </div>
         </div>
@@ -230,109 +240,50 @@
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-gears fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">RoR based CMS</h4>
+            <p class="text-muted">We successfully implemented custom CMS solutions for media websites, journals. blogs, and for corporate websites which provide an easy to use interface and flexibility in creating different content types. The clean and uncluttered admin interface is simple to use and gives website owners the tools they need to manage their content.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">RoR based e-commerce</h4>
+            <p class="text-muted">For all ranges of retail companies, our technical team provides a vast range of custom e-commerce systems that attract customers and grow your online business. Our development team is up to date on all the latest changes in implementation of large-scale enterprise e-commerce solutions. We have solid experience in creating solutions based on microservices approach.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-pie-chart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">APV visualization library</h4>
+            <p class="text-muted">APV is a framework built on popular JavaScript technologies such as redux, react-router and redux-saga. We developed a rich functional charting, data visualization library for browsers. It offers an easy way of representing numbers on a webpage making use of interactive and highly customizable charts.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Prediction Tool</h4>
+            <h4 class="service-heading">Prediction tool</h4>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-area-chart fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-language fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">Analytics Tool</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="service-heading service-heading--wide">Natural language processing</h4>
+            <p class="text-muted">Our major focus is Text Analysis. We have a team of 10 semantics and search engineers working in this area. Our knowledge can help in other domains like document management systems, knowledge management systems, SMS processing system and CRM analytics.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Team -->
-    <section class="bg-light" id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-              <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-              <h4>Larry Parker</h4>
-              <p class="text-muted">Lead Marketer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-              <h4>Diana Pertersen</h4>
-              <p class="text-muted">Lead Developer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-sitemap fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Hidden Markov model</h4>
+            <p class="text-muted">We have experience in parsers, POS taggers and Named Entity recognizers on different open source tools like Stanford NLP, OpenNLP, Chaniak, and Lingpipe. Wordnet has been an excellent tool and quite instrumental in implementing techniques like synonym clubbing. We have also implemented algorithms on Pronomial core reference resolution and word sense disambiguation as well as solved problems using HMM.</p>
           </div>
         </div>
       </div>
