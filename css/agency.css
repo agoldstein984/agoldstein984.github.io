@@ -222,6 +222,8 @@ section#contact {
     font-weight: 700;
     color: #ced4da;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  section#contact .address {
+    color: #ced4da; }
 
 footer {
   padding: 25px 0;
