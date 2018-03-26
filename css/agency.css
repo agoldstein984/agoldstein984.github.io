@@ -40,6 +40,10 @@ section {
     margin-bottom: 75px;
     text-transform: none;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  section ul, section p {
+    font-weight: 300; }
+  section ul li:not(:last-child) {
+    margin-bottom: 5px; }
 
 @media (min-width: 768px) {
   section {
