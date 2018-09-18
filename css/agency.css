@@ -261,3 +261,53 @@ ul.social-buttons {
     background-color: #212529; }
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
       background-color: #b13e1b; }
+
+.project-item {
+  padding: 0 15px; }
+
+.about-person {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex; }
+  @media screen and (max-width: 920px) {
+    .about-person {
+      position: static; } }
+  .about-person__wrapper {
+    margin: 0 auto;
+    align-self: center;
+    position: relative; }
+    @media screen and (max-width: 920px) {
+      .about-person__wrapper {
+        height: 100%; } }
+  .about-person__info {
+    display: flex;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #b13e1b;
+    max-width: 900px; }
+    @media screen and (max-width: 920px) {
+      .about-person__info {
+        height: 100%;
+        display: block;
+        border: none; } }
+  .about-person__image {
+    width: 400px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    flex-shrink: 0; }
+    @media screen and (max-width: 920px) {
+      .about-person__image {
+        width: 100%; } }
+  .about-person__text {
+    padding: 10px; }
+  .about-person__close-icon {
+    padding-right: 5px;
+    padding-top: 1px;
+    cursor: pointer; }
