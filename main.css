@@ -2721,6 +2721,13 @@ License: https://webthemez.com/license
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+@media screen and (min-width: 1440px) {
+  .home-container {
+    max-width: 1440px;
+  }
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -3007,6 +3014,15 @@ h6 {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .intro-content-wrapper {
+    width: 51%;
+    position: relative;
+    top: 50px;
+    left: 39px;
+  }
+}
+
 #intro .intro-content {
   z-index: 10;
   display: flex;
@@ -3016,6 +3032,7 @@ h6 {
   height: 100%;
   background-image: url(a4a316b25dd83324bde21ba15031407b.png);
   background-repeat: no-repeat;
+  background-position-y: -59px;
 }
 
 #intro .intro-content h2 {
@@ -3031,8 +3048,9 @@ h6 {
   color: #1f1b9d;
   text-align: right;
   font-size: 48px;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: bold;
+  line-height: 46px;
+  letter-spacing: -0.05em;
 }
 
 @media (max-width: 767px) {
@@ -3466,7 +3484,12 @@ Inner Banner
 
 #about {
   padding: 60px 0 60px 0;
-  background-color: rgba(14, 12, 94, 0.6);
+  background: linear-gradient(
+    0deg,
+    rgba(14, 12, 94, 0.6),
+    rgba(14, 12, 94, 0.6)
+  ), url(aa029414d0237efbff4546bb927db971.png);
+  background-size: cover;
 }
 
 #about section.info-section {
@@ -3476,11 +3499,42 @@ Inner Banner
   margin-bottom: 50px;
 }
 
+#about section.info-section:last-child {
+  margin-bottom: 0;
+}
+
 #about section.info-section .image {
   height: 100%; 
   max-width: 600px;
   width: 100%;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1199px) {
+  
+
+  #about section.info-section .image {
+    max-width: 440px;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+}
+
+@media screen and (max-width: 991px) {
+  #about section.info-section {
+    height: auto;
+    display: block;
+    padding-bottom: 30px;
+  }
+
+  #about section.info-section .image {
+    max-width: 100%;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 #about section.info-section .info {
@@ -3530,8 +3584,18 @@ Inner Banner
   color: #1F1B9D;
 }
 
-#about section.info-section:last-child {
-  margin-bottom: 0;
+@media screen and (max-width: 500px) {
+  #about section.info-section .image {
+    height: 200px;
+  }
+
+  #about section.info-section .info {
+    padding-top: 30px;
+  }
+
+  #about section.info-section .info .list-items--small {
+    padding-left: 100px;
+  }
 }
 
 /* About Home Section
@@ -4381,10 +4445,6 @@ img.screen-img {
 }
 
 @media (max-width: 768px) {
-  #about {
-    padding-bottom: 0;
-  }
-
   .cta-btn-container {
     display: flex;
     justify-content: center;
