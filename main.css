@@ -2818,13 +2818,17 @@ h6 {
   color: #1f1b9d;
 }
 
+.cases {
+  background-color: #f3f3f3;
+}
+
 .cases #case .content::after {
   position: absolute;
   content: " ";
   top: 0px;
   border-top: 200px solid transparent;
   border-bottom: 200px solid transparent;
-  border-left: 60px solid #fff;
+  border-left: 60px solid #f3f3f3;
   z-index: 1;
 }
 
@@ -3003,6 +3007,21 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  top: 45px;
+}
+
+#intro .intro-content {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 100%;
+  background-image: url(a4a316b25dd83324bde21ba15031407b.png);
+  background-repeat: no-repeat;
+  background-position-y: -59px;
+  background-position-x: -180px;
 }
 
 @media screen and (max-width: 768px) {
@@ -3021,18 +3040,10 @@ h6 {
     top: 50px;
     left: 39px;
   }
-}
 
-#intro .intro-content {
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  height: 100%;
-  background-image: url(a4a316b25dd83324bde21ba15031407b.png);
-  background-repeat: no-repeat;
-  background-position-y: -59px;
+  #intro .intro-content {
+    background-position-x: 0;
+  }
 }
 
 #intro .intro-content h2 {
@@ -3389,7 +3400,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 Inner Banner
 ---------------------------------------------------*/
 #innerBanner {
-  padding: 40px 0;
+  padding: 34px 0;
   text-align: center;
   background-color: #0E0C5E;
 }
@@ -3410,10 +3421,11 @@ Inner Banner
 #innerBanner h2 {
   color: #fff;
   font-weight: bold;
-  font-size: 38px;
+  font-size: 24px;
   text-align: center;
-  margin-bottom: 10px;
-  max-width: 60%;
+  margin-bottom: 0;
+  max-width: 490px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 576px) {
