@@ -2832,13 +2832,13 @@ h6 {
   z-index: 1;
 }
 
-.odd-content::after {
-  left: -60px;
-  transform: rotate(-180deg); 
+.cases #case .even-content::after {
+  left: 570px;
 }
 
-.even-content::after {
-  left: 570px;
+.cases #case .odd-content::after {
+  left: -60px;
+  transform: rotate(-180deg);
 }
 
 @media (max-width: 1199px) {
