@@ -2783,7 +2783,6 @@ h6 {
 #case h3,
 #case h2 {
   max-width: 60%;
-  margin-top: 70px;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -2811,7 +2810,10 @@ h6 {
 }
 
 #case .content {
-  padding-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .title {
@@ -2820,7 +2822,17 @@ h6 {
 
 .cases {
   background-color: #f3f3f3;
+  padding-bottom: 50px;
 }
+
+
+
+@media screen and (min-width: 1200px) {
+  .cases #case .container {
+    max-width: 1440px;
+  }
+}
+
 
 .cases #case .content::after {
   position: absolute;
@@ -2828,16 +2840,20 @@ h6 {
   top: 0px;
   border-top: 200px solid transparent;
   border-bottom: 200px solid transparent;
-  border-left: 60px solid #f3f3f3;
+  border-left: 40px solid #f3f3f3;
   z-index: 1;
 }
 
+.cases #case .odd-content {
+  padding-left: 70px;
+}
+
 .cases #case .even-content::after {
-  left: 570px;
+  left: 100%;
 }
 
 .cases #case .odd-content::after {
-  left: -60px;
+  left: -40px;
   transform: rotate(-180deg);
 }
 
@@ -2850,6 +2866,10 @@ h6 {
 @media(max-width: 991px) {
   .cases #case .content::after {
     display: none;
+  }
+
+  .cases #case .odd-content {
+    padding-left: 20px;
   }
 }
 
