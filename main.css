@@ -4231,6 +4231,11 @@ Inner Banner
   margin-bottom: 30px;
 }
 
+.technologies__item .salesforce {
+  opacity: 0.5;
+  width: 116px;
+}
+
 .technologies__image {
   width: 50%;
 }
