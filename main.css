@@ -2799,6 +2799,9 @@ h6 {
   color: #000;
   text-transform: uppercase;
 }
+#case h3 {
+  margin: 24px 0 8px;
+}
 
 #case p {
   font-family: 'Open Sans', sans-serif;
@@ -2809,6 +2812,7 @@ h6 {
   letter-spacing: 0em;
   text-align: left;
   color: #000;
+  margin-bottom: 16px;
 }
 
 #case img {
@@ -2878,7 +2882,7 @@ h6 {
 }
 
 #case .technology-stack {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   font-size: 14px;
   font-weight: 300;
   color: #000;
