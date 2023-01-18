@@ -4021,7 +4021,8 @@ Inner Banner
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  background: linear-gradient(
+  background: linear-gradient(90deg, rgba(15, 15, 15, 0.9) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.2)),
+    linear-gradient(
       181.12deg,
       rgba(27, 25, 101, 0.7) -7.32%,
       rgba(31, 27, 157, 0.7) 108.49%
@@ -4909,63 +4910,6 @@ img.screen-img {
 #services .card-title-icon {
   height: 36px;
 }
-
-#about-section .gradient-layer {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  background: linear-gradient(90deg, rgba(15, 15, 15, 0.9) 0%, rgba(0, 0, 0, 0) 100%),
-    rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 575px) {
-}
-
-@media (max-width: 768px) {
-  #about-section .gradient-layer {
-    height: 1152px;
-  }
-}
-
-  @media (max-width: 991px) {
-    #about-section .gradient-layer {
-      height: 983px;
-    }
-  }
-
-  @media (max-width: 1199px) {
-    #about-section .gradient-layer {
-      height: 823px;
-    }
-  }
-
-  @media (min-width: 320px) {
-    #about-section .gradient-layer {
-      height: 1152px;
-    }
-  }
-
-  @media (min-width: 576px) {
-
-  }
-
-  @media (min-width: 769px) {
-    #about-section .gradient-layer {
-      height: 983px;
-    }
-  }
-
-  @media (min-width: 992px) {
-    #about-section .gradient-layer {
-      height: 823px;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    #about-section .gradient-layer {
-      height: 755px;
-    }
-  }
 
 .technologies-row {
     display: flex;
