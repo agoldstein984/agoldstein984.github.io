@@ -2798,7 +2798,6 @@ body {
 }
 
 body {
-  min-width: 540px;
   background: #fff;
   color: #444;
   font-family: 'Gotham Pro', 'Open Sans', sans-serif;
@@ -3098,19 +3097,13 @@ h6 {
 --------------------------------------------------------------*/
 #intro {
   width: 100%;
-  height: 838px;
+  padding-bottom: 112px;
   position: relative;
 }
 
 #intro .item {
   height: 100%;
   opacity: 0.6;
-}
-
-.intro-content-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 #intro .intro-content {
@@ -3122,24 +3115,10 @@ h6 {
   height: 100%;
   background-position: center center;
   background-size: cover;
-  background-image: url(e8d5d4da3646a021f7e8.png);
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 768px) {
-  .intro-content-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
-  }
-}
-
 @media screen and (min-width: 1440px) {
-  .intro-content-wrapper {
-    position: relative;
-  }
-
   #intro .intro-content {
     background-position-x: 0;
   }
@@ -3147,12 +3126,9 @@ h6 {
 
 #intro .intro-content h2 {
   color: #1f1b9d;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: normal;
   text-align: left;
-  margin-left: 18%;
-  max-width: 395px;
-  margin-top: 115px;
 }
 
 #intro .intro-content h2 span {
@@ -3160,21 +3136,19 @@ h6 {
   font-weight: 700;
   color: #1f1b9d;
   text-align: right;
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 46px;
+  font-size: 64px;
+  line-height: 68px;
   letter-spacing: -0.05em;
 }
 
 @media (max-width: 767px) {
   #intro .intro-content h2 {
     font-size: 22px;
-    background: #ffffffa3;
-    padding: 15px;
   }
 
   #intro .intro-content h2 span {
-    font-size: 40px;
+    font-size: 50px;
+    line-height: 56px;
   }
 }
 
@@ -3229,9 +3203,6 @@ h6 {
 
 
 @media screen and (max-width: 768px) {
-  #intro .get-stared-wrapper {
-    margin-top: 0;
-  }
   .about-cycle {
     max-width: 350px;
     max-height: 350px;
@@ -3239,16 +3210,9 @@ h6 {
   .about-info {
     flex-direction: column;
   }
-  #intro .container {
-    padding-left: 0;
-  }
 }
 
 @media screen and (min-width: 769px) {
-  #intro .get-stared-wrapper {
-    margin-top: 300px;
-    margin-right: 5px;
-  }
   .about-info {
     flex-direction: row;
   }
@@ -3559,8 +3523,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 Inner Banner
 ---------------------------------------------------*/
 #innerBanner {
-  height: 169px;
-  padding-top: 78px;
+  padding: 34px 0;
   text-align: center;
   align-items: center;
   align-content: center;
@@ -4092,7 +4055,7 @@ Inner Banner
 #about-section .section-header p {
   font-size: 14px;
   font-weight: 500;
-  max-width: 504px;
+  max-width: 485px;
 }
 
 #about-section .content ul li {
@@ -4500,7 +4463,7 @@ Inner Banner
 
 .map {
   height: 270px;
-  margin-bottom: 65px;
+  width: 100%;
 }
 
 p.help-block,
@@ -4645,12 +4608,14 @@ p.help-block li {
 /* Contact Section
 --------------------------------*/
 #contact {
-  padding: 90px 0 111px 0;
+  padding: 90px 0 90px 0;
+  display: flex;
+  justify-content: center;
 }
+
 
 #contact .contact-info {
   margin-bottom: 20px;
-  text-align: center;
 }
 
 #contact .contact-info address,
@@ -4661,6 +4626,7 @@ p.help-block li {
   font-weight: bold;
   margin-bottom: 20px;
   line-height: 17px;
+  background-color: 'red';
 }
 
 #contact .contact-info h3 {
@@ -4975,7 +4941,44 @@ img.screen-img {
 
   .map-container {
   width: 100%;
-  background-color: #EAEAF3;
+  background-color: #EDEFF6;
+}
+
+#intro .intro-content-wrapper {
+  max-width: 650px;
+  padding-top: 112px;
+}
+
+#intro .get-stared-wrapper {
+  margin-top: 4px;
+}
+
+#intro .container {
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 991px) {
+  #contact .contact-block {
+    width: 100%;
+    max-width: 670px;
+    padding: 20px;
+  }
+  #contact .contact-container {
+    max-width: calc(100% - 40px);
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #contact .contact-block {
+    width: 50%;
+    padding: 20px;
+  }
+  #contact .contact-container {
+    width: calc(100% - 240px);
+    max-width: 1500px;
+}
 }
 
 /*!
