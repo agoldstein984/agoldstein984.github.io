@@ -3665,6 +3665,12 @@ Inner Banner
   margin: 0;
 }
 
+.about-google-map {
+height: 387;
+width: 100%;
+margin: 0;
+}
+
 #about-map .locations {
   margin: 0 auto;
   max-width: 1000px;
@@ -4482,6 +4488,13 @@ Inner Banner
 .map {
   height: 270px;
   width: 100%;
+}
+
+.map-header-filler {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: white;
 }
 
 p.help-block,
