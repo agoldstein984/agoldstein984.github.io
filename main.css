@@ -4094,14 +4094,14 @@ margin: 0;
 --------------------------------*/
 #clients {
   background-size: cover;
-  height: 450px;
+  height: 460px;
   display: flex;
   align-items: center;
 }
 
 #clients .container {
   background-color: #fff;
-  height: 450px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   align-items: center;
