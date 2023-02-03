@@ -2858,6 +2858,7 @@ h6 {
 #case {
   position: relative;
   padding-bottom: 50px;
+  padding-top: 30px;
 }
 
 #case img {
@@ -3070,10 +3071,6 @@ h6 {
   #mobile-nav-toggle {
     height: inherit;
   }
-  .contact-info-wrapper {
-    margin-right: 50px;
-  }
-
   #header #logo h1 {
     font-size: 34px;
     margin: 0;
@@ -3263,7 +3260,7 @@ h6 {
 
 @media screen and (max-width: 991px) {
   .contact-info-wrapper {
-    margin-right: 70px;
+    display: none;
   }
 }
 
@@ -3271,6 +3268,9 @@ h6 {
   .about-cycle {
     max-width: 428px;
     max-height: 428px;
+  }
+  .contact-info-wrapper {
+    display: flex;
   }
 }
 
