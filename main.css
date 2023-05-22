@@ -3842,7 +3842,7 @@ Inner Banner
   #about .image-container-wrapper {
     width: 100%;
     height: 378px;
-    background: linear-gradient(352deg, #e5e5e5, #e0dede, #d7d7d7, #cdcdcd, #bfbfbf, #b5b5b5);
+    /* background: linear-gradient(352deg, #e5e5e5, #e0dede, #d7d7d7, #cdcdcd, #bfbfbf, #b5b5b5); */
   }
   #about .image-container {
     height: 378px;
@@ -3859,7 +3859,7 @@ Inner Banner
   #about .image-container-wrapper {
     width: 43%;
     height: 578px;
-    background: linear-gradient(1deg, #eeeaea, #e2e2e2, #d9d9d9, #cfcfcf, #bdbdbd, #b7b7b7);
+    /* background: linear-gradient(1deg, #eeeaea, #e2e2e2, #d9d9d9, #cfcfcf, #bdbdbd, #b7b7b7); */
   }
   #about .image-container {
     height: 578px;
@@ -5058,7 +5058,7 @@ img.screen-img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(bb736efe60b34a4a199d.png);
+  background-image: url(eff01da513b27db4e894.jpg);
 }
 
 #about .info-section {
