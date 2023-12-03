@@ -3283,6 +3283,166 @@ h6 {
   }
 }
 
+.get_assessment_button {
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #222222;
+  margin-top: 0;
+  margin-left: 18px;
+  padding: 0 34px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  min-height: 40px;
+  background: linear-gradient(180deg, rgba(73, 141, 218, 0.123) 0%, rgba(45, 79, 234, 0.027) 100%);
+  border-radius: 22px;
+  border: 2px #5a6bff solid;
+  text-transform: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0px 12px;
+}
+
+@media screen and (max-width: 991px) {
+  .get_assessment_button {
+    display: none;
+  }
+}
+.get_assessment_button:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+#overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#closeArea {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  overflow: visible;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 2;
+}
+
+.modal-content {
+  text-align: center;
+  padding: 12px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: -20;
+  color: #5a6bff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-group {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.modal-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.modal_submit {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(73, 141, 218, 0.123) 0%, rgba(45, 79, 234, 0.027) 100%);
+  border-radius: 22px;
+  padding: 2px 36px;
+  border: 2px #5a6bff solid;
+  letter-spacing: 0.02em;
+  text-transform: inherit;
+  text-decoration: none;
+  min-height: 40px;
+  width: 160px;
+  text-wrap: nowrap;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.modal_submit:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 1rem 3rem #005bca56;
+}
+
+.modal-content input {
+  background: #f9fafd;
+  border: 1px solid #bcbeff;
+  border-radius: 5px;
+  padding: 1.3rem 2.8rem;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.9rem;
+  letter-spacing: 0.02em;
+  color: #222222;
+}
+
+.modal-content input {
+  height: 24px;
+}
+
+.modal-content textarea {
+  height: 128px;
+  background: #f9fafd;
+  border: 1px solid #bcbeff;
+  border-radius: 5px;
+  padding: 1.3rem 2.8rem;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.9rem;
+  letter-spacing: 0.02em;
+  color: #222222;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
 @media screen and (max-width: 991px) {
   .contact-info-wrapper {
     display: none;
@@ -3366,6 +3526,8 @@ h6 {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .nav-menu ul {
@@ -4781,6 +4943,25 @@ p.help-block li {
   text-decoration: underline;
 }
 
+.image-block {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.contact-image {
+  width: 250px;
+}
+
+.contact-address {
+  color: #1f1b9d;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+}
+
 #contact .contact-address,
 #contact .contact-phone,
 #contact .contact-email {
@@ -5089,6 +5270,10 @@ img.screen-img {
     max-width: 670px;
     padding: 20px;
   }
+  #contact .map-block {
+    width: 100%;
+    padding: 20px;
+  }
   #contact .contact-container {
     max-width: calc(100% - 40px);
     display: flex;
@@ -5099,6 +5284,10 @@ img.screen-img {
 @media screen and (min-width: 992px) {
   #contact .contact-block {
     width: 50%;
+    padding: 20px;
+  }
+  #contact .map-block {
+    width: 100%;
     padding: 20px;
   }
   #contact .contact-container {
