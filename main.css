@@ -5292,7 +5292,7 @@ img.screen-img {
   }
   #contact .contact-container {
     width: calc(100% - 240px);
-    max-width: 1500px;
+    max-width: 1000px;
   }
 }
 
